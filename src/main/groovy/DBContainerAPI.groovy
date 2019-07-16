@@ -1,0 +1,3 @@
+interface DBContainerAPI<T> {
+
+}
