@@ -1,3 +1,0 @@
-interface DBContainerAPI<T> {
-
-}
