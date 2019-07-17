@@ -1,7 +1,47 @@
+/**
+ * API for logging messages
+ *
+ * @since API Version 1.0
+ */
 public interface LoggerAPI {
-    void warning(String message);
-    void error(String message);
-    void info(String message);
-    void trace(String message);
-    void debug(String message);
+
+  /**
+   * Logs warning messages
+   *
+   * @param message message to log
+   * @since API Version 1.0
+   */
+  void warning(String message);
+
+  /**
+   * Logs error messages
+   *
+   * @param message message to log
+   * @since API Version 1.0
+   */
+  void error(String message);
+
+  /**
+   * Logs info messages
+   *
+   * @param message message to log
+   * @since API Version 1.0
+   */
+  void info(String message);
+
+  /**
+   * Logs trace messages
+   *
+   * @param message message to log
+   * @since API Version 1.0
+   */
+  void trace(String message);
+
+  /**
+   * Logs debug messages
+   *
+   * @param message message to log
+   * @since API Version 1.0
+   */
+  void debug(String message);
 }
