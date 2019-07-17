@@ -1,5 +1,17 @@
 import java.util.Map;
 
+/**
+ * API for session
+ *
+ * @since API Version 2.0
+ */
 public interface SessionAPI {
-    Map<String, Object> getParameters();
+
+  /**
+   * Get session parameters
+   *
+   * @return Map of session parameters
+   * @since API Version 2.0
+   */
+  Map<String, Object> getParameters();
 }
