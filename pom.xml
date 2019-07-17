@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
    <modelVersion>4.0.0</modelVersion>
 
    <groupId>com.infor.m3</groupId>
@@ -17,13 +16,17 @@
    </properties>
 
    <dependencies>
-      <dependency> <!-- use a specific Groovy version rather than the one specified by spock-core -->
+      <dependency>
          <groupId>org.codehaus.groovy</groupId>
          <artifactId>groovy-all</artifactId>
-         <version>2.5.7</version>
+         <version>2.5.6</version>
          <type>pom</type>
       </dependency>
    </dependencies>
+
+   <scm>
+      <connection>scm:git:ssh://git@oxfordssh.awsdev.infor.com:7999/Erfan.Yousefi/xtendm3-sdk.git</connection>
+  </scm>
 
    <build>
       <plugins>
@@ -101,6 +104,25 @@
                </execution>
             </executions>
             <version>3.0.1</version>
+         </plugin>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-release-plugin</artifactId>
+            <version>2.5.3</version>
+            <configuration>
+               <goals>install</goals>
+            </configuration>
+         </plugin>
+         <plugin>
+            <groupId>com.amashchenko.maven.plugin</groupId>
+            <artifactId>gitflow-maven-plugin</artifactId>
+            <version>1.12.0</version>
+            <configuration>
+               <gitFlowConfig>
+                  <productionBranch>master</productionBranch>
+                  <developmentBranch>master</developmentBranch>
+               </gitFlowConfig>
+            </configuration>
          </plugin>
       </plugins>
    </build>
