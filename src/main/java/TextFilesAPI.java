@@ -54,7 +54,7 @@ public interface TextFilesAPI {
 
   /**
    * Lists all folders. Throws FileUtilException on error.
-   * @return Iterator<String> - string iterator for enumerating the folder names
+   * @return string iterator for enumerating the folder names
    * @throws FileUtilException on error
    * @since API Version 11.0
    */

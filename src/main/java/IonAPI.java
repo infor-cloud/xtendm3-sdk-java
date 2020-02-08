@@ -13,6 +13,7 @@ public interface IonAPI {
    * @param url        ION API Url starting with a slash and tenant name e.g. '/ACMECORP_PRD/xxxxx'
    * @param headers    Request headers
    * @param parameters Request parameters
+   * @return ION Response API
    * @since API Version 6.0
    */
   IonResponseAPI get(String url, Map<String, String> headers, Map<String, String> parameters);
@@ -24,6 +25,7 @@ public interface IonAPI {
    * @param headers        Request headers
    * @param parameters     Request parameters
    * @param formParameters Request form parameters
+   * @return ION Response API
    * @since API Version 6.0
    */
   IonResponseAPI post(String url, Map<String, String> headers, Map<String, String> parameters, Map<String, String> formParameters);
@@ -35,6 +37,7 @@ public interface IonAPI {
    * @param headers    Request headers
    * @param parameters Request parameters
    * @param body       Request body
+   * @return ION Response API
    * @since API Version 6.0
    */
   IonResponseAPI post(String url, Map<String, String> headers, Map<String, String> parameters, String body);
@@ -46,6 +49,7 @@ public interface IonAPI {
    * @param headers        Request headers
    * @param parameters     Request parameters
    * @param formParameters Request form parameters
+   * @return ION Response API
    * @since API Version 6.0
    */
   IonResponseAPI put(String url, Map<String, String> headers, Map<String, String> parameters, Map<String, String> formParameters);
@@ -57,6 +61,7 @@ public interface IonAPI {
    * @param headers    Request headers
    * @param parameters Request parameters
    * @param body       Request body
+   * @return ION Response API
    * @since API Version 6.0
    */
   IonResponseAPI put(String url, Map<String, String> headers, Map<String, String> parameters, String body);
@@ -67,6 +72,7 @@ public interface IonAPI {
    * @param url        ION API Url starting with a slash and tenant name e.g. '/ACMECORP_PRD/xxxxx'
    * @param headers    Request headers
    * @param parameters Request parameters
+   * @return ION Response API
    * @since API Version 6.0
    */
   IonResponseAPI delete(String url, Map<String, String> headers, Map<String, String> parameters);
