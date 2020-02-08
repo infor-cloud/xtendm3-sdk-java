@@ -75,10 +75,11 @@ public interface InteractiveAPI {
   String getMode();
 
   /**
-   * Returns option selected in list panel if any
+   * Value not accessible, will always return empty string
    *
    * @return Selected option
-   * @since API Version 1.0
+   * @since API Version 10.0
+   * @deprecated Deprecated since API Version 10.0
    */
   String getSelectedListOption();
 
