@@ -37,7 +37,7 @@ In your Groovy Maven project you should add a dependency similar to the followin
 <dependency>
   <groupId>com.infor.m3</groupId>
   <artifactId>xtendm3-sdk</artifactId>
-  <version>6.1</version>
+  <version>7</version>
 </dependency>
 ```
 
