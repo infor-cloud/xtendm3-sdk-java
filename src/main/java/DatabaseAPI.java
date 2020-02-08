@@ -34,6 +34,13 @@ public interface DatabaseAPI<T> {
   DatabaseAPI<T> selection(String... columns);
 
   /**
+   * Select all columns from table, when creating a database action
+   * @return Self reference, builder
+   * @since API Version 8.0
+   */
+  DatabaseAPI<T> selectAllFields();
+
+  /**
    * Set match expression, when creating a database action
    *
    * @param exp The expression to match

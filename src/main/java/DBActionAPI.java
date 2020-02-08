@@ -39,6 +39,17 @@ public interface DBActionAPI<T> {
   int readAll(DBContainerAPI keyContainer, int nrOfKeys, Closure<?> callback);
 
   /**
+   * Read all records in the database matching the keys in the container and execute the callback method for each existing record
+   *
+   * @param keyContainer The key container used to match records in the database
+   * @param nrOfKeys     The number of keys to use when match records in database
+   * @param callback     A defined Closure method to call for each record in database, matching the key
+   * @return The number of records read from database
+   * @since API Version 8.0
+   */
+  int readAllLock(DBContainerAPI keyContainer, int nrOfKeys, Closure<?> callback);
+
+  /**
    * Try to insert a record into the database
    *
    * @param container The container to insert in database
