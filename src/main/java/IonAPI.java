@@ -16,7 +16,7 @@ public interface IonAPI {
    * @return ION Response API
    * @since API Version 6.0
    */
-  IonResponseAPI get(String url, Map<String, String> headers, Map<String, String> parameters);
+  IonResponse get(String url, Map<String, String> headers, Map<String, String> parameters);
 
   /**
    * Perform a post request to an ION API
@@ -28,7 +28,7 @@ public interface IonAPI {
    * @return ION Response API
    * @since API Version 6.0
    */
-  IonResponseAPI post(String url, Map<String, String> headers, Map<String, String> parameters, Map<String, String> formParameters);
+  IonResponse post(String url, Map<String, String> headers, Map<String, String> parameters, Map<String, String> formParameters);
 
   /**
    * Perform a post request to an ION API
@@ -40,7 +40,7 @@ public interface IonAPI {
    * @return ION Response API
    * @since API Version 6.0
    */
-  IonResponseAPI post(String url, Map<String, String> headers, Map<String, String> parameters, String body);
+  IonResponse post(String url, Map<String, String> headers, Map<String, String> parameters, String body);
 
   /**
    * Perform a put request to an ION API
@@ -52,7 +52,7 @@ public interface IonAPI {
    * @return ION Response API
    * @since API Version 6.0
    */
-  IonResponseAPI put(String url, Map<String, String> headers, Map<String, String> parameters, Map<String, String> formParameters);
+  IonResponse put(String url, Map<String, String> headers, Map<String, String> parameters, Map<String, String> formParameters);
 
   /**
    * Perform a put request to an ION API
@@ -64,7 +64,7 @@ public interface IonAPI {
    * @return ION Response API
    * @since API Version 6.0
    */
-  IonResponseAPI put(String url, Map<String, String> headers, Map<String, String> parameters, String body);
+  IonResponse put(String url, Map<String, String> headers, Map<String, String> parameters, String body);
 
   /**
    * Perform a delete request to an ION API
@@ -75,5 +75,5 @@ public interface IonAPI {
    * @return ION Response API
    * @since API Version 6.0
    */
-  IonResponseAPI delete(String url, Map<String, String> headers, Map<String, String> parameters);
+  IonResponse delete(String url, Map<String, String> headers, Map<String, String> parameters);
 }

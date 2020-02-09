@@ -3,7 +3,7 @@
  *
  * @since API Version 5.0
  */
-public interface ExpressionFactoryAPI {
+public interface ExpressionFactory {
 
   /**
    * Equal
@@ -13,7 +13,7 @@ public interface ExpressionFactoryAPI {
    * @return Self reference, builder
    * @since API Version 5.0
    */
-  ExpressionFactoryAPI eq(String columnName, String value);
+  ExpressionFactory eq(String columnName, String value);
 
   /**
    * Greater than
@@ -23,7 +23,7 @@ public interface ExpressionFactoryAPI {
    * @return Self reference, builder
    * @since API Version 5.0
    */
-  ExpressionFactoryAPI gt(String columnName, String value);
+  ExpressionFactory gt(String columnName, String value);
 
   /**
    * Less than
@@ -33,7 +33,7 @@ public interface ExpressionFactoryAPI {
    * @return Self reference, builder
    * @since API Version 5.0
    */
-  ExpressionFactoryAPI lt(String columnName, String value);
+  ExpressionFactory lt(String columnName, String value);
 
   /**
    * Greater than or equal
@@ -43,7 +43,7 @@ public interface ExpressionFactoryAPI {
    * @return Self reference, builder
    * @since API Version 5.0
    */
-  ExpressionFactoryAPI ge(String columnName, String value);
+  ExpressionFactory ge(String columnName, String value);
 
   /**
    * Less than or equal
@@ -53,7 +53,7 @@ public interface ExpressionFactoryAPI {
    * @return Self reference, builder
    * @since API Version 5.0
    */
-  ExpressionFactoryAPI le(String columnName, String value);
+  ExpressionFactory le(String columnName, String value);
 
   /**
    * Not equal
@@ -63,7 +63,7 @@ public interface ExpressionFactoryAPI {
    * @return Self reference, builder
    * @since API Version 5.0
    */
-  ExpressionFactoryAPI ne(String columnName, String value);
+  ExpressionFactory ne(String columnName, String value);
 
   /**
    * Like
@@ -73,7 +73,7 @@ public interface ExpressionFactoryAPI {
    * @return Self reference, builder
    * @since API Version 5.0
    */
-  ExpressionFactoryAPI like(String columnName, String value);
+  ExpressionFactory like(String columnName, String value);
 
   /**
    * Between
@@ -84,7 +84,7 @@ public interface ExpressionFactoryAPI {
    * @return Self reference, builder
    * @since API Version 5.0
    */
-  ExpressionFactoryAPI between(String columnName, String fromValue, String toValue);
+  ExpressionFactory between(String columnName, String fromValue, String toValue);
 
   /**
    * In
@@ -94,7 +94,7 @@ public interface ExpressionFactoryAPI {
    * @return Self reference, builder
    * @since API Version 5.0
    */
-  ExpressionFactoryAPI in(String columnName, String... value);
+  ExpressionFactory in(String columnName, String... value);
 
   /**
    * And
@@ -103,7 +103,7 @@ public interface ExpressionFactoryAPI {
    * @return Self reference, builder
    * @since API Version 5.0
    */
-  ExpressionFactoryAPI and(ExpressionFactoryAPI rightExp);
+  ExpressionFactory and(ExpressionFactory rightExp);
 
   /**
    * Or
@@ -112,7 +112,7 @@ public interface ExpressionFactoryAPI {
    * @return Self reference, builder
    * @since API Version 5.0
    */
-  ExpressionFactoryAPI or(ExpressionFactoryAPI rightExp);
+  ExpressionFactory or(ExpressionFactory rightExp);
 
   /**
    * Get expression from ExpressionFactory

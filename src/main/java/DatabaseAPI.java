@@ -47,7 +47,7 @@ public interface DatabaseAPI<T> {
    * @return Self reference, builder
    * @since API Version 5.0
    */
-  DatabaseAPI<T> matching(ExpressionFactoryAPI exp);
+  DatabaseAPI<T> matching(ExpressionFactory exp);
 
   /**
    * Create a DBAction
@@ -55,7 +55,7 @@ public interface DatabaseAPI<T> {
    * @return DBAction
    * @since API Version 5.0
    */
-  DBActionAPI<T> build();
+  DBAction<T> build();
 
   /**
    * Create an ExpressionFactory
@@ -64,7 +64,7 @@ public interface DatabaseAPI<T> {
    * @return An ExpressionFactory to create Expressions used in DBAction.matching(...)
    * @since API Version 5.0
    */
-  ExpressionFactoryAPI getExpressionFactory(String table);
+  ExpressionFactory getExpressionFactory(String table);
 
   /**
    * Create a new database container
@@ -73,7 +73,7 @@ public interface DatabaseAPI<T> {
    * @return New container for table
    * @since API Version 5.0
    */
-  DBContainerAPI createContainer(String table);
+  DBContainer createContainer(String table);
 
   /**
    * Get a database container with current state
@@ -82,5 +82,5 @@ public interface DatabaseAPI<T> {
    * @return Container with current state
    * @since API Version 5.0
    */
-  DBContainerAPI getContainer(String table);
+  DBContainer getContainer(String table);
 }

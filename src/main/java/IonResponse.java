@@ -5,7 +5,7 @@ import java.util.Map;
  *
  * @since API Version 6.0
  */
-public interface IonResponseAPI {
+public interface IonResponse {
 
   /**
    * Get int value from status code

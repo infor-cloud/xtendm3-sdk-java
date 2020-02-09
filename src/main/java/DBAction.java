@@ -6,7 +6,7 @@ import groovy.lang.Closure;
  * @param <T> Generic table
  * @since API Version 5.0
  */
-public interface DBActionAPI<T> {
+public interface DBAction<T> {
 
   /**
    * Read a record in the database, matching the keys in the container
@@ -15,7 +15,7 @@ public interface DBActionAPI<T> {
    * @return {@code true} if a record is found
    * @since API Version 5.0
    */
-  boolean read(DBContainerAPI container);
+  boolean read(DBContainer container);
 
   /**
    * Lock a record in the database, matching the keys in the container and execute the callback method if the record exists
@@ -25,7 +25,7 @@ public interface DBActionAPI<T> {
    * @return {@code true} if a record is found
    * @since API Version 5.0
    */
-  boolean readLock(DBContainerAPI container, Closure<?> callback);
+  boolean readLock(DBContainer container, Closure<?> callback);
 
   /**
    * Read all records in the database matching the keys in the container
@@ -36,7 +36,7 @@ public interface DBActionAPI<T> {
    * @return The number of records read from database
    * @since API Version 5.0
    */
-  int readAll(DBContainerAPI keyContainer, int nrOfKeys, Closure<?> callback);
+  int readAll(DBContainer keyContainer, int nrOfKeys, Closure<?> callback);
 
   /**
    * Read all records in the database matching the keys in the container and execute the callback method for each existing record
@@ -47,7 +47,7 @@ public interface DBActionAPI<T> {
    * @return The number of records read from database
    * @since API Version 8.0
    */
-  int readAllLock(DBContainerAPI keyContainer, int nrOfKeys, Closure<?> callback);
+  int readAllLock(DBContainer keyContainer, int nrOfKeys, Closure<?> callback);
 
   /**
    * Try to insert a record into the database
@@ -56,7 +56,7 @@ public interface DBActionAPI<T> {
    * @return {@code true} if the insert succeeds
    * @since API Version 5.0
    */
-  boolean insert(DBContainerAPI container);
+  boolean insert(DBContainer container);
 
   /**
    * Try to insert a record in to the database. If the record exists, the callback method will be executed
@@ -66,7 +66,7 @@ public interface DBActionAPI<T> {
    * @return {@code true} if the insert succeeds
    * @since API Version 5.0
    */
-  boolean insert(DBContainerAPI container, Closure<?> callback);
+  boolean insert(DBContainer container, Closure<?> callback);
 
   /**
    * Create a new database container
@@ -74,7 +74,7 @@ public interface DBActionAPI<T> {
    * @return New database container
    * @since API Version 5.0
    */
-  DBContainerAPI createContainer();
+  DBContainer createContainer();
 
   /**
    * Get a database container with the current state
@@ -82,5 +82,5 @@ public interface DBActionAPI<T> {
    * @return Container with the current state
    * @since API Version 5.0
    */
-  DBContainerAPI getContainer();
+  DBContainer getContainer();
 }

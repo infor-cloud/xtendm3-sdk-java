@@ -4,7 +4,7 @@
  * @param <T> Generic table
  * @since API Version 5.0
  */
-public interface LockedResultAPI<T> extends DBContainerAPI<T> {
+public interface LockedResult<T> extends DBContainer<T> {
 
   /**
    * Update the database record

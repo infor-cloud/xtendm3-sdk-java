@@ -6,7 +6,7 @@ import java.util.Set;
  * @param <T> Generic table
  * @since API Version 5.0
  */
-public interface DBContainerAPI<T> {
+public interface DBContainer<T> {
 
   /**
    * Get value from a database container
@@ -140,7 +140,7 @@ public interface DBContainerAPI<T> {
    * @return A copy of current DBContainer
    * @since API Version 5.0
    */
-  DBContainerAPI createCopy();
+  DBContainer createCopy();
 
   /**
    * Get all columns that is set in the database container
@@ -164,5 +164,5 @@ public interface DBContainerAPI<T> {
    * @return An ExpressionFactory to create Expressions used in DBAction.matching(...)
    * @since API Version 5.0
    */
-  ExpressionFactoryAPI getExpressionFactory();
+  ExpressionFactory getExpressionFactory();
 }
