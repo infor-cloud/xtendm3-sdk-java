@@ -15,7 +15,7 @@ public interface DBAction<T> {
    * @return {@code true} if a record is found
    * @since API Version 5.0
    */
-  boolean read(DBContainer container);
+  boolean read(DBContainer<T> container);
 
   /**
    * Lock a record in the database, matching the keys in the container and execute the callback method if the record exists
@@ -25,7 +25,7 @@ public interface DBAction<T> {
    * @return {@code true} if a record is found
    * @since API Version 5.0
    */
-  boolean readLock(DBContainer container, Closure<?> callback);
+  boolean readLock(DBContainer<T> container, Closure<?> callback);
 
   /**
    * Read all records in the database matching the keys in the container
@@ -36,7 +36,7 @@ public interface DBAction<T> {
    * @return The number of records read from database
    * @since API Version 5.0
    */
-  int readAll(DBContainer keyContainer, int nrOfKeys, Closure<?> callback);
+  int readAll(DBContainer<T> keyContainer, int nrOfKeys, Closure<?> callback);
 
   /**
    * Read all records in the database matching the keys in the container and execute the callback method for each existing record
@@ -47,7 +47,7 @@ public interface DBAction<T> {
    * @return The number of records read from database
    * @since API Version 8.0
    */
-  int readAllLock(DBContainer keyContainer, int nrOfKeys, Closure<?> callback);
+  int readAllLock(DBContainer<T> keyContainer, int nrOfKeys, Closure<?> callback);
 
   /**
    * Try to insert a record into the database
@@ -56,7 +56,7 @@ public interface DBAction<T> {
    * @return {@code true} if the insert succeeds
    * @since API Version 5.0
    */
-  boolean insert(DBContainer container);
+  boolean insert(DBContainer<T> container);
 
   /**
    * Try to insert a record in to the database. If the record exists, the callback method will be executed
@@ -66,7 +66,7 @@ public interface DBAction<T> {
    * @return {@code true} if the insert succeeds
    * @since API Version 5.0
    */
-  boolean insert(DBContainer container, Closure<?> callback);
+  boolean insert(DBContainer<T> container, Closure<?> callback);
 
   /**
    * Create a new database container
@@ -74,7 +74,7 @@ public interface DBAction<T> {
    * @return New database container
    * @since API Version 5.0
    */
-  DBContainer createContainer();
+  DBContainer<T> createContainer();
 
   /**
    * Get a database container with the current state
@@ -82,5 +82,5 @@ public interface DBAction<T> {
    * @return Container with the current state
    * @since API Version 5.0
    */
-  DBContainer getContainer();
+  DBContainer<T> getContainer();
 }

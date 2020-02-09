@@ -73,7 +73,7 @@ public interface DatabaseAPI<T> {
    * @return New container for table
    * @since API Version 5.0
    */
-  DBContainer createContainer(String table);
+  DBContainer<T> createContainer(String table);
 
   /**
    * Get a database container with current state
@@ -82,5 +82,5 @@ public interface DatabaseAPI<T> {
    * @return Container with current state
    * @since API Version 5.0
    */
-  DBContainer getContainer(String table);
+  DBContainer<T> getContainer(String table);
 }

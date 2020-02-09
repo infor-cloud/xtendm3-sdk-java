@@ -1,7 +1,7 @@
 import java.util.Set;
 
 /**
- * API for accessing datasbase data container
+ * API for accessing database data container
  *
  * @param <T> Generic table
  * @since API Version 5.0
@@ -140,7 +140,7 @@ public interface DBContainer<T> {
    * @return A copy of current DBContainer
    * @since API Version 5.0
    */
-  DBContainer createCopy();
+  DBContainer<T> createCopy();
 
   /**
    * Get all columns that is set in the database container
