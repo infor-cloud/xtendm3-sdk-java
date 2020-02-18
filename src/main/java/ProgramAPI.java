@@ -21,7 +21,7 @@ public interface ProgramAPI {
    * @return LDAZD variables map
    * @since API Version 1.0
    */
-  Map<Object, Object> getLDAZD();
+  ReadOnlyMap<Object, Object> getLDAZD();
 
   /**
    * Get LDAZZ variables map
@@ -29,7 +29,7 @@ public interface ProgramAPI {
    * @return LDAZZ variables map
    * @since API Version 1.0
    */
-  Map<Object, Object> getLDAZZ();
+  ReadOnlyMap<Object, Object> getLDAZZ();
 
   /**
    * Checks if given program is in the current call stack
