@@ -10,7 +10,7 @@ import java.util.Map;
 public interface MICallerAPI {
 
   /**
-   * Performs MI transaction, if an error occurs the callback will recieve a map with keys 'error', 'errorMsid' and 'errorMessage'
+   * Performs MI transaction, if an error occurs the callback will receive a map with keys 'error', 'errorMsid' and 'errorMessage'
    *
    * @param program     Program name
    * @param transaction Transaction name
@@ -20,7 +20,7 @@ public interface MICallerAPI {
   void call(String program, String transaction, Closure<?> callback);
 
   /**
-   * Performs MI transaction for the given parameters map, if an error occurs the callback will recieve a map with keys 'error', 'errorMsid' and 'errorMessage'
+   * Performs MI transaction for the given parameters map, if an error occurs the callback will receive a map with keys 'error', 'errorMsid' and 'errorMessage'
    *
    * @param program     Program name
    * @param transaction Transaction name

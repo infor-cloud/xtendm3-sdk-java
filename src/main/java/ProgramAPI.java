@@ -107,7 +107,7 @@ public interface ProgramAPI {
   Map<String, String> getTable(String tableName, String lf);
 
   /**
-   * Gets the values of a MDB table, eqvivalent to getTable(tableName, 'RR');
+   * Gets the values of a MDB table, equivalent to getTable(tableName, 'RR');
    *
    * @param tableName Name of MDB table
    * @return Map containing the values, {@code null} if error occurs

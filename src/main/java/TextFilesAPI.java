@@ -11,7 +11,7 @@ import java.util.function.Consumer;
 public interface TextFilesAPI {
 
   /**
-   * Open a SubDirectory. Top or root directory is denotated by null. Throws FileUtilException on error.
+   * Open a SubDirectory. Top or root directory is denoted by null. Throws FileUtilException on error.
    * @param subDirectory name of the subDirectory
    * @throws FileUtilException on error
    * @since API Version 11.0

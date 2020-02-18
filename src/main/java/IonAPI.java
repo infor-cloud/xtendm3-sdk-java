@@ -10,7 +10,7 @@ public interface IonAPI {
   /**
    * Perform a get request to an ION API
    *
-   * @param url        ION API Url starting with a slash and tenant name e.g. '/ACMECORP_PRD/xxxxx'
+   * @param url        ION API api URL, tenant name is not needed in the URL. Can begin with '/' or without
    * @param headers    Request headers
    * @param parameters Request parameters
    * @return ION Response API
@@ -21,7 +21,7 @@ public interface IonAPI {
   /**
    * Perform a post request to an ION API
    *
-   * @param url            ION API Url starting with a slash and tenant name e.g. '/ACMECORP_PRD/xxxxx'
+   * @param url            ION API api URL, tenant name is not needed in the URL. Can begin with '/' or without
    * @param headers        Request headers
    * @param parameters     Request parameters
    * @param formParameters Request form parameters
@@ -33,7 +33,7 @@ public interface IonAPI {
   /**
    * Perform a post request to an ION API
    *
-   * @param url        ION API Url starting with a slash and tenant name e.g. '/ACMECORP_PRD/xxxxx'
+   * @param url        ION API api URL, tenant name is not needed in the URL. Can begin with '/' or without
    * @param headers    Request headers
    * @param parameters Request parameters
    * @param body       Request body
@@ -45,7 +45,7 @@ public interface IonAPI {
   /**
    * Perform a put request to an ION API
    *
-   * @param url            ION API Url starting with a slash and tenant name e.g. '/ACMECORP_PRD/xxxxx'
+   * @param url            ION API api URL, tenant name is not needed in the URL. Can begin with '/' or without
    * @param headers        Request headers
    * @param parameters     Request parameters
    * @param formParameters Request form parameters
@@ -57,7 +57,7 @@ public interface IonAPI {
   /**
    * Perform a put request to an ION API
    *
-   * @param url        ION API Url starting with a slash and tenant name e.g. '/ACMECORP_PRD/xxxxx'
+   * @param url        ION API api URL, tenant name is not needed in the URL. Can begin with '/' or without
    * @param headers    Request headers
    * @param parameters Request parameters
    * @param body       Request body
@@ -69,7 +69,7 @@ public interface IonAPI {
   /**
    * Perform a delete request to an ION API
    *
-   * @param url        ION API Url starting with a slash and tenant name e.g. '/ACMECORP_PRD/xxxxx'
+   * @param url        ION API api URL, tenant name is not needed in the URL. Can begin with '/' or without
    * @param headers    Request headers
    * @param parameters Request parameters
    * @return ION Response API

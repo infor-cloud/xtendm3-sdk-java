@@ -39,7 +39,7 @@ public interface InteractiveAPI {
   void showCustomInfo(String message);
 
   /**
-   * Show message for user, set focus on given field and flag program error occured
+   * Show message for user, set focus on given field and flag program error occurred
    *
    * @param fieldName   Name of field to focus
    * @param messageId   ID for message to show
@@ -49,7 +49,7 @@ public interface InteractiveAPI {
   void showError(String fieldName, String messageId, String messageData);
 
   /**
-   * Show message for user, set focus on given field and flag program error occured
+   * Show message for user, set focus on given field and flag program error occurred
    *
    * @param fieldName Name of field to focus
    * @param messageId ID for message to show
@@ -58,7 +58,7 @@ public interface InteractiveAPI {
   void showError(String fieldName, String messageId);
 
   /**
-   * Show custom message for user, set focus on given field and flag program error occured
+   * Show custom message for user, set focus on given field and flag program error occurred
    *
    * @param fieldName Name of field to focus
    * @param message   Message to show
