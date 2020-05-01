@@ -126,11 +126,11 @@ public interface DBContainer<T> {
   boolean isSet(String columnName);
 
   /**
-   * Check if value is set to null in the database container
+   * Values in container can not be set to null. Will call method isSet
    *
    * @param columnName Name of the column
    * @return {@code true} if value is {@code null}
-   * @since API Version 5.0
+   * @since API Version 13.0
    */
   boolean isNull(String columnName);
 
