@@ -1,7 +1,7 @@
 /**
  * API for logging messages
  *
- * @since API Version 1.0
+ * @since API Version 0.1.0
  */
 public interface LoggerAPI {
 
@@ -9,7 +9,7 @@ public interface LoggerAPI {
    * Logs warning messages
    *
    * @param message message to log
-   * @since API Version 1.0
+   * @since API Version 0.1.0
    */
   void warning(String message);
 
@@ -17,7 +17,7 @@ public interface LoggerAPI {
    * Logs error messages
    *
    * @param message message to log
-   * @since API Version 1.0
+   * @since API Version 0.1.0
    */
   void error(String message);
 
@@ -25,7 +25,7 @@ public interface LoggerAPI {
    * Logs info messages
    *
    * @param message message to log
-   * @since API Version 1.0
+   * @since API Version 0.1.0
    */
   void info(String message);
 
@@ -33,7 +33,7 @@ public interface LoggerAPI {
    * Logs trace messages
    *
    * @param message message to log
-   * @since API Version 1.0
+   * @since API Version 0.1.0
    */
   void trace(String message);
 
@@ -41,7 +41,7 @@ public interface LoggerAPI {
    * Logs debug messages
    *
    * @param message message to log
-   * @since API Version 1.0
+   * @since API Version 0.1.0
    */
   void debug(String message);
 }

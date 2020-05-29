@@ -6,7 +6,7 @@
 
   <groupId>com.infor.m3</groupId>
   <artifactId>xtendm3-sdk</artifactId>
-  <version>13.1-sync-sdk-version-SNAPSHOT</version>
+  <version>0.13.1-sync-sdk-version-SNAPSHOT</version>
 
   <name>xtendm3-sdk</name>
 
@@ -26,7 +26,7 @@
   </dependencies>
 
   <scm>
-    <connection>scm:git:ssh://git@oxfordssh.awsdev.infor.com:7999/Erfan.Yousefi/xtendm3-sdk.git</connection>
+    <connection>scm:git:ssh://git@github.com:infor-cloud/xtendm3-sdk-java.git</connection>
   </scm>
 
   <build>
