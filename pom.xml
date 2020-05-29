@@ -7,8 +7,37 @@
   <groupId>com.infor.m3</groupId>
   <artifactId>xtendm3-sdk</artifactId>
   <version>0.13.2-update-pom-settings-SNAPSHOT</version>
+  <packaging>jar</packaging>
 
-  <name>xtendm3-sdk</name>
+  <name>XtendM3 SDK</name>
+  <description>XtendM3 SDK for developing XtendM3 Extensions locally</description>
+  <url>https://github.com/infor-cloud/xtendm3-sdk-java/</url>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:git:ssh://git@github.com:infor-cloud/xtendm3-sdk-java.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com:infor-cloud/xtendm3-sdk-java.git</developerConnection>
+    <url>https://github.com/infor-cloud/xtendm3-sdk-java/</url>
+  </scm>
+
+  <developers>
+    <developer>
+      <id>XtendM3</id>
+      <name>XtendM3</name>
+      <email>xtendm3@infor.com</email>
+      <organization>Infor</organization>
+      <organizationUrl>https://www.infor.com/</organizationUrl>
+      <roles>
+        <role>developer</role>
+      </roles>
+    </developer>
+  </developers>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -25,16 +54,9 @@
     </dependency>
   </dependencies>
 
-  <scm>
-    <connection>scm:git:ssh://git@github.com:infor-cloud/xtendm3-sdk-java.git</connection>
-  </scm>
-
   <build>
     <plugins>
-      <!-- Mandatory plugins for using Spock -->
       <plugin>
-        <!-- The gmavenplus plugin is used to compile Groovy code. To learn more about this plugin,
-        visit https://github.com/groovy/GMavenPlus/wiki -->
         <groupId>org.codehaus.gmavenplus</groupId>
         <artifactId>gmavenplus-plugin</artifactId>
         <version>1.7.1</version>
