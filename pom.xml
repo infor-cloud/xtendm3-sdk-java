@@ -6,7 +6,7 @@
 
   <groupId>com.infor.m3</groupId>
   <artifactId>xtendm3-sdk</artifactId>
-  <version>13.1-SNAPSHOT</version>
+  <version>13.1-sync-sdk-version-SNAPSHOT</version>
 
   <name>xtendm3-sdk</name>
 
