@@ -2,7 +2,7 @@
  * API for database access
  *
  * @param <T> Generic table
- * @since API Version 5.0
+ * @since API Version 0.5.0
  */
 public interface DatabaseAPI<T> {
 
@@ -11,7 +11,7 @@ public interface DatabaseAPI<T> {
    *
    * @param lf Name of index to access
    * @return Self reference, builder
-   * @since API Version 5.0
+   * @since API Version 0.5.0
    */
   DatabaseAPI<T> index(String lf);
 
@@ -20,7 +20,7 @@ public interface DatabaseAPI<T> {
    *
    * @param table Name of database table to access
    * @return Self reference, builder
-   * @since API Version 5.0
+   * @since API Version 0.5.0
    */
   DatabaseAPI<T> table(String table);
 
@@ -29,14 +29,14 @@ public interface DatabaseAPI<T> {
    *
    * @param columns The column names to return
    * @return Self reference, builder
-   * @since API Version 5.0
+   * @since API Version 0.5.0
    */
   DatabaseAPI<T> selection(String... columns);
 
   /**
    * Select all columns from table, when creating a database action
    * @return Self reference, builder
-   * @since API Version 8.0
+   * @since API Version 0.8.0
    */
   DatabaseAPI<T> selectAllFields();
 
@@ -45,7 +45,7 @@ public interface DatabaseAPI<T> {
    *
    * @param exp The expression to match
    * @return Self reference, builder
-   * @since API Version 5.0
+   * @since API Version 0.5.0
    */
   DatabaseAPI<T> matching(ExpressionFactory exp);
 
@@ -53,7 +53,7 @@ public interface DatabaseAPI<T> {
    * Create a DBAction
    *
    * @return DBAction
-   * @since API Version 5.0
+   * @since API Version 0.5.0
    */
   DBAction<T> build();
 
@@ -62,7 +62,7 @@ public interface DatabaseAPI<T> {
    *
    * @param table The table to match the expression against
    * @return An ExpressionFactory to create Expressions used in DBAction.matching(...)
-   * @since API Version 5.0
+   * @since API Version 0.5.0
    */
   ExpressionFactory getExpressionFactory(String table);
 
@@ -71,7 +71,7 @@ public interface DatabaseAPI<T> {
    *
    * @param table The name of the database table
    * @return New container for table
-   * @since API Version 5.0
+   * @since API Version 0.5.0
    */
   DBContainer<T> createContainer(String table);
 
@@ -80,7 +80,7 @@ public interface DatabaseAPI<T> {
    *
    * @param table The name of the database table
    * @return Container with current state
-   * @since API Version 5.0
+   * @since API Version 0.5.0
    */
   DBContainer<T> getContainer(String table);
 }

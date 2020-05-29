@@ -1,7 +1,7 @@
 /**
  * API to execute Utilities
  *
- * @since API Version 7.0
+ * @since API Version 0.7.0
  */
 public interface UtilityAPI {
 
@@ -11,7 +11,7 @@ public interface UtilityAPI {
    * @param method method to call
    * @param arguments arguments call the method with
    * @return returns value returned from utility if applicable, otherwise void
-   * @since API Version 7.0
+   * @since API Version 0.7.0
    */
   Object call(String utility, String method, Object... arguments);
 }

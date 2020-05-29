@@ -1,7 +1,7 @@
 /**
  * API for Interactive programs, contains API Display
  *
- * @since API Version 1.0
+ * @since API Version 0.1.0
  */
 public interface InteractiveAPI {
 
@@ -9,7 +9,7 @@ public interface InteractiveAPI {
    * Get display API
    *
    * @return Display API
-   * @since API Version 1.0
+   * @since API Version 0.1.0
    */
   DisplayAPI getDisplay();
 
@@ -17,7 +17,7 @@ public interface InteractiveAPI {
    * Show message for user
    *
    * @param messageId ID of message to show
-   * @since API Version 1.0
+   * @since API Version 0.1.0
    */
   void showInfo(String messageId);
 
@@ -26,7 +26,7 @@ public interface InteractiveAPI {
    *
    * @param messageId   ID of message to show
    * @param messageData Data for the given message
-   * @since API Version 1.0
+   * @since API Version 0.1.0
    */
   void showInfo(String messageId, String messageData);
 
@@ -34,7 +34,7 @@ public interface InteractiveAPI {
    * Show custom message for user
    *
    * @param message Message to show
-   * @since API Version 1.0
+   * @since API Version 0.1.0
    */
   void showCustomInfo(String message);
 
@@ -44,7 +44,7 @@ public interface InteractiveAPI {
    * @param fieldName   Name of field to focus
    * @param messageId   ID for message to show
    * @param messageData Data for the given message
-   * @since API Version 1.0
+   * @since API Version 0.1.0
    */
   void showError(String fieldName, String messageId, String messageData);
 
@@ -53,7 +53,7 @@ public interface InteractiveAPI {
    *
    * @param fieldName Name of field to focus
    * @param messageId ID for message to show
-   * @since API Version 1.0
+   * @since API Version 0.1.0
    */
   void showError(String fieldName, String messageId);
 
@@ -62,7 +62,7 @@ public interface InteractiveAPI {
    *
    * @param fieldName Name of field to focus
    * @param message   Message to show
-   * @since API Version 1.0
+   * @since API Version 0.1.0
    */
   void showCustomError(String fieldName, String message);
 
@@ -70,7 +70,7 @@ public interface InteractiveAPI {
    * Returns string describing the current mode, possible modes: 'add', 'change', 'copy', 'delete', 'unknown'
    *
    * @return Name of current mode
-   * @since API Version 1.0
+   * @since API Version 0.1.0
    */
   String getMode();
 
@@ -78,8 +78,8 @@ public interface InteractiveAPI {
    * Value not accessible, will always return empty string
    *
    * @return Selected option
-   * @since API Version 10.0
-   * @deprecated Deprecated since API Version 10.0
+   * @since API Version 0.10.0
+   * @deprecated Deprecated since API Version 0.10.0
    */
   String getSelectedListOption();
 
@@ -88,7 +88,7 @@ public interface InteractiveAPI {
    * This method is intended for use during PRE PxCHK
    *
    * @param message Message to display
-   * @since API Version 4.0
+   * @since API Version 0.4.0
    */
   void showWarningDialog(String message);
 
@@ -97,7 +97,7 @@ public interface InteractiveAPI {
    *
    * @param message message to display
    * @return {@code true} if 'Ok' was pressed, otherwise {@code false}
-   * @since API Version 4.0
+   * @since API Version 0.4.0
    */
   boolean showOkDialog(String message);
 
@@ -106,7 +106,7 @@ public interface InteractiveAPI {
    *
    * @param message Message to display
    * @return {@code true} if 'Ok' was pressed, otherwise {@code false}
-   * @since API Version 4.0
+   * @since API Version 0.4.0
    */
   boolean showOkCancelDialog(String message);
 
@@ -115,7 +115,7 @@ public interface InteractiveAPI {
    *
    * @param message Message to display
    * @return {@code true} if 'Yes' was pressed, otherwise {@code false}
-   * @since API Version 4.0
+   * @since API Version 0.4.0
    */
   boolean showYesNoDialog(String message);
 }
