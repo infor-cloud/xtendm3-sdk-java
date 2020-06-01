@@ -6,7 +6,7 @@
 
   <groupId>com.infor.m3</groupId>
   <artifactId>xtendm3-sdk</artifactId>
-  <version>0.13.3-SNAPSHOT</version>
+  <version>0.13.3-distribution-management-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>XtendM3 SDK</name>
@@ -25,6 +25,17 @@
     <developerConnection>scm:git:ssh://git@github.com:infor-cloud/xtendm3-sdk-java.git</developerConnection>
     <url>https://github.com/infor-cloud/xtendm3-sdk-java/</url>
   </scm>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+  </distributionManagement>
 
   <developers>
     <developer>
