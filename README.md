@@ -1,3 +1,6 @@
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+![Java CI](https://github.com/infor-cloud/xtendm3-sdk-java/workflows/Java%20CI/badge.svg)
+[![Maven Central](https://img.shields.io/maven-central/v/com.infor.m3/xtendm3-sdk.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.infor.m3%22%20AND%20a:%22xtendm3-sdk%22)
 # XtendM3 SDK
 
 ## Introduction
