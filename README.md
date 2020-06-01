@@ -40,7 +40,7 @@ In your Groovy Maven project you should add a dependency similar to the followin
 <dependency>
   <groupId>com.infor.m3</groupId>
   <artifactId>xtendm3-sdk</artifactId>
-  <version>0.12.0</version>
+  <version>0.13.4</version>
 </dependency>
 ```
 
