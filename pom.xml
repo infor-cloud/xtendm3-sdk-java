@@ -6,7 +6,7 @@
 
   <groupId>com.infor.m3</groupId>
   <artifactId>xtendm3-sdk</artifactId>
-  <version>0.13.3-activate-maven-release-SNAPSHOT</version>
+  <version>0.13.3-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>XtendM3 SDK</name>
