@@ -2,8 +2,8 @@ name: Java CD
 
 on:
   push:
-    branches-ignore:
-      - '**' # Should run on master, but it is disable for now until repository is created at OSSH
+    branches:
+      - master
 
 jobs:
   build:
