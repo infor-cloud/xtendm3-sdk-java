@@ -6,7 +6,7 @@
 
   <groupId>com.infor.m3</groupId>
   <artifactId>xtendm3-sdk</artifactId>
-  <version>0.13.6-SNAPSHOT</version>
+  <version>0.14.0-micaller-maxrec-dateformat-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>XtendM3 SDK</name>
