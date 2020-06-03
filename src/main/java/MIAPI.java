@@ -50,4 +50,44 @@ public interface MIAPI {
    * @since 0.15.0
    */
   ReadOnlyMap<String, Object> getIn();
+
+  /**
+   * Returns the max amount of records allowed to be written by the transaction
+   *
+   * @return Max records
+   * @since 0.16.0
+   */
+  int getMaxRecords();
+
+  /**
+   * Returns the remaining amount of records allowed to be written by the current transaction
+   *
+   * @return Remaining records
+   * @since 0.16.0
+   */
+  int getRemainingRecords();
+
+  /**
+   * Checks if the current transaction can still write additional records
+   *
+   * @return {@code true} if more records can be written, false if max records has been reached
+   * @since 0.16.0
+   */
+  boolean hasRemainingRecords();
+
+  /**
+   * Returns the current date format. Possible formats: YMD8, YMD6, MDY6, DMY6, YWD5
+   *
+   * @return Ddate format
+   * @since 0.16.0
+   */
+  String getDateFormat();
+
+  /**
+   * Returns the current date separator
+   *
+   * @return Date separator
+   * @since 0.16.0
+   */
+  char getDateSeparator();
 }
