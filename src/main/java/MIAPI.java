@@ -43,4 +43,11 @@ public interface MIAPI {
    * @since API Version 0.9.0
    */
   void error(String errorMessage, String field, String errorCode);
+
+  /**
+   * Get container for In values for Transactions. Contained values are already converted to the proper type
+   * @return Container
+   * @since 0.15.0
+   */
+  ReadOnlyMap<String, Object> getIn();
 }
