@@ -103,7 +103,9 @@ public interface ProgramAPI {
    * @param lf        Logic file name
    * @return Map containing the values, {@code null} if error occurs
    * @since API Version 0.1.0
+   * @deprecated API Version 0.18.0, see {@link #getTableRecord(String)}
    */
+  @Deprecated
   Map<String, String> getTable(String tableName, String lf);
 
   /**
@@ -112,8 +114,18 @@ public interface ProgramAPI {
    * @param tableName Name of MDB table
    * @return Map containing the values, {@code null} if error occurs
    * @since API Version 0.1.0
+   * @deprecated API Version 0.18.0, see {@link #getTableRecord(String)}
    */
+  @Deprecated
   Map<String, String> getTable(String tableName);
+
+  /**
+   * Gets the values of a MDB table
+   * @param tableName Table name
+   * @return record containing the values, null if error occurs
+   * @since API Version 0.18.0
+   */
+  ReadOnlyMap<String, Object> getTableRecord(String tableName);
 
   /**
    * Checks if the exit flag is active
