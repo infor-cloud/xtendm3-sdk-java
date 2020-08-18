@@ -30,4 +30,11 @@ public interface MethodAPI {
    * @since API Version 0.5.0
    */
   Object getReturnValue();
+
+  /**
+   * Get the original value returned from the overrided method
+   * @return value returned from the original method
+   * @since API Version 0.17.0
+   */
+  Object getOriginalReturnValue();
 }
