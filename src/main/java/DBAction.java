@@ -39,6 +39,17 @@ public interface DBAction<T> {
   int readAll(DBContainer<T> keyContainer, int nrOfKeys, Closure<?> callback);
 
   /**
+   * Read all records in the database matching the keys in the container
+   *
+   * @param keyContainer  The key container used to match records in the database
+   * @param nrOfKeys      The number of keys to use when match records in database
+   * @param nrOfRecords   The number of records to read from the database
+   * @param callback      A defined Closure method to call for each record in database, matching the key
+   * @return The number of records read from database
+   */
+  int readAll(DBContainer<T> keyContainer, int nrOfKeys, int nrOfRecords, Closure<?> callback);
+
+  /**
    * Read all records in the database matching the keys in the container and execute the callback method for each existing record
    *
    * @param keyContainer The key container used to match records in the database
