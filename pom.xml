@@ -6,7 +6,8 @@
 
   <groupId>com.infor.m3</groupId>
   <artifactId>xtendm3-sdk</artifactId>
-  <version>0.18.2-databaseAPI-reverse-SNAPSHOT</version>
+  <!--<version>0.18.2-databaseAPI-reverse-SNAPSHOT</version>-->
+  <version>0.18.3-databaseAPI-reverse-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>XtendM3 SDK</name>
