@@ -6,17 +6,17 @@
 public interface BatchAPI {
 
   /**
-   * Getter for job id
+   * Get batch job id
    *
-   * @return Selected job id
+   * @return batch job id
    * @since API Version 0.23
    */
   String getJobId();
 
   /**
-   * Getter for reference id
+   * Get batch reference id
    *
-   * @return Selected reference id
+   * @return batch job reference id
    * @since API Version 0.23
    */
   String getReferenceId();
