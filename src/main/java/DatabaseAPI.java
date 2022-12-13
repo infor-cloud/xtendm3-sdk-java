@@ -50,6 +50,13 @@ public interface DatabaseAPI<T> {
   DatabaseAPI<T> matching(ExpressionFactory exp);
 
   /**
+   * Set read with reverse order, when creating a database action
+   *
+   * @return Self reference, builder
+   */
+  DatabaseAPI<T> reverse();
+
+  /**
    * Create a DBAction
    *
    * @return DBAction
