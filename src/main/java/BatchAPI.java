@@ -1,17 +1,23 @@
 /**
- * API to work with running Batch extensions
+ * API for batch
+ *
+ * @since API Version 0.23
  */
 public interface BatchAPI {
 
   /**
    * Get batch job id
-   * @return job id
+   *
+   * @return batch job id
+   * @since API Version 0.23
    */
-  Integer getJobId();
+  String getJobId();
 
   /**
-   * Get reference id, batch job id as string
-   * @return job reference id
+   * Get batch reference id
+   *
+   * @return batch job reference id
+   * @since API Version 0.23
    */
   String getReferenceId();
 }
