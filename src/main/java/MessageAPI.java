@@ -1,3 +1,5 @@
+import java.util.List;
+
 /**
  * API for retrieving messages
  * @since API Version 0.19.0
